@@ -5,7 +5,7 @@ const styles = {
     margin: 30
 };
 
-function NavBar (){
+function NavBar (props){
     return (
         <nav
         className = "navbar navbar-expand-lg navbar-light bg-light"
@@ -34,7 +34,7 @@ function NavBar (){
                  {/* {this <li> will handle the display of scores} */}
                  <li className = "nav-item" style = {styles}>
                      {/* <h3>Score: {score} | Top Score: {topScore}</h3> */}
-                     <a href = "provisional link" className = "nav-link scores active">Score: 0 | Top Score: 0</a>
+                     <a href = "provisional link" className = "nav-link scores active">Score: {props.score} | Top Score: {props.topScore}</a>
                  </li>
                 </ul>
 
